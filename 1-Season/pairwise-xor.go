@@ -3,14 +3,11 @@ package main
 import (
 	"fmt"
 	"math"
+	"sort"
 )
 
 // Программист на пляже
-//func pairwiseXor(a, b int) int {
-//	similarity := a ^ b
-//	return similarity
-//}
-
+// TODO : 8TC - Time limit exceeded
 func pairwiseXor(seats []int) int {
 	similarity := math.MaxInt
 	for i := 1; i < len(seats); i++ {
@@ -37,15 +34,8 @@ func main() {
 		for st := range seats {
 			fmt.Scan(&seats[st])
 		}
+		sort.Ints(seats)
+
 		fmt.Println(pairwiseXor(seats))
-		//var seat1, seat2, sim int
-		//fmt.Scan(&seat1, &seat2)
-		//sim = pairwiseXor(seat1, seat2)
-		//for j := 2; j < places; j++ {
-		//	seat1 = seat2
-		//	fmt.Scan(&seat2)
-		//	sim = min(sim, pairwiseXor(seat1, seat2))
-		//}
-		//fmt.Println(sim)
 	}
 }
