@@ -39,3 +39,31 @@ func main() {
 		fmt.Println(pairwiseXor(seats))
 	}
 }
+
+/* C++
+#include <algorithm>
+#include <cstdint>
+#include <cstdio>
+
+using namespace std;
+
+int main() {
+    int t;
+    scanf("%d", &t);
+    while (t--) {
+        int n;
+        scanf("%d", &n);
+        int* v = (int*) malloc(sizeof(int) * n);
+        for (int i = 0; i < n; ++i) {
+            scanf("%d", &v[i]);
+        }
+        sort(v, v + n);
+        int ans = INT32_MAX;
+        for (int i = 1; i < n; ++i) {
+            ans = min(ans, v[i] ^ v[i - 1]);
+        }
+        printf("%d\n", ans);
+    }
+    return 0;
+}
+*/

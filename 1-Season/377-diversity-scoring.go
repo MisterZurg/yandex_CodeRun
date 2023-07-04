@@ -1,56 +1,64 @@
 package main
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strconv"
+	"strings"
+)
 
+// 377. Оценка разнообразия - by ChatGPT
 func main() {
-	var n int
-	fmt.Scan(&n)
-
-	productsToCategories := make(map[int]int)
+	reader := bufio.NewReader(os.Stdin)
+	nStr, _ := reader.ReadString('\n')
+	n, _ := strconv.Atoi(strings.TrimSpace(nStr))
+	allProduct := make(map[int64]int64, n)
 	for i := 0; i < n; i++ {
-		var prod, cat int
-		fmt.Scan(&prod, &cat)
-		productsToCategories[prod] = cat
+		s, _ := reader.ReadString('\n')
+		s = strings.TrimSpace(s)
+		productAndcategory := strings.Split(s, " ")
+		productStr, categoryStr := productAndcategory[0], productAndcategory[1]
+		product, _ := strconv.ParseInt(productStr, 10, 64)
+		category, _ := strconv.ParseInt(categoryStr, 10, 64)
+		allProduct[product] = category
 	}
 
-	products := make([]int, n)
-	for i := range products {
-		fmt.Scan(&products[i])
+	mapCategories := make(map[int64][]int, n)
+	s, _ := reader.ReadString('\n')
+	s = strings.TrimSpace(s)
+	products := strings.Split(s, " ")
+	for i, str := range products {
+		product, _ := strconv.ParseInt(str, 10, 64)
+		category := allProduct[product]
+		arr := mapCategories[category]
+		arr = append(arr, i+1)
+		mapCategories[category] = arr
 	}
 
-	i, j := 0, 1
-	currentUnique := make(map[int]bool)
-	currentUnique[products[i]] = true
+	result := int(9223372036854775807)
+	count := int64(0)
 
-	diversity := n
-	for j < n {
-		if i < n && j < n &&
-			!currentUnique[productsToCategories[products[j]]] {
-			currentUnique[productsToCategories[products[j]]] = true
-			j++
+	for _, arr := range mapCategories {
+		if len(arr) == 1 {
+			count++
 		} else {
-			diversity = min(diversity, j-i)
-			for i < j {
-				currentUnique[productsToCategories[products[i]]] = false
-				i++
+			minimal := arr[1] - arr[0]
+			for i := 2; i < len(arr); i++ {
+				div := arr[i] - arr[i-1]
+				if div < minimal {
+					minimal = div
+				}
+			}
+			if minimal < result {
+				result = minimal
 			}
 		}
-		// fmt.Println(currentUnique)
 	}
-	fmt.Println(diversity)
-}
 
-func min(a, b int) int {
-	if a < b {
-		return a
+	if count == int64(len(mapCategories)) {
+		result = int(count)
 	}
-	return b
-}
 
-//5
-//1 1
-//2 1
-//3 1
-//4 2
-//5 2
-//1 4 2 5 3
+	fmt.Println(result)
+}

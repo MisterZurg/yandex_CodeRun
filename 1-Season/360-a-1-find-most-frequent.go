@@ -183,3 +183,16 @@ func main() {
 	}
 	fmt.Println(topFreq)
 }
+
+/* GoVno Python 3.11.2
+from collections import Counter
+
+n = int(input())
+a = [int(i) for i in input().split()]
+c = Counter(a[0:n]).most_common()
+max_inner = c[0][1]
+
+c = [i[0] for i in c if i[1]==max_inner]
+
+print(max(c))
+*/
