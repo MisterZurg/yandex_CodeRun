@@ -34,6 +34,7 @@ TODO
 | 324 |                        Много стульев                         | $\textcolor{#2db49d}{\textsf{Легкая}}$  |      Math      |
 | 325 |                      Коля и датацентры                       | $\textcolor{#ff9d42}{\textsf{Средняя}}$  |      Math      |
 | 331 |                   Средняя сетевая задержка                   | $\textcolor{#ff9d42}{\textsf{Средняя}}$  |      Math      |
+| 336 |                   Иван и opensource                   | $\textcolor{#ff9d42}{\textsf{Средняя}}$  |    Strings     |
 | 344 |                            Шашки                             | $\textcolor{#2db49d}{\textsf{Легкая}}$  |      Math      |
 | 349 |            Опять JSON’ы перекладывать (разминка)             | $\textcolor{#2db49d}{\textsf{Легкая}}$  |       -        |
 | 352 |                 Камни и украшения (разминка)                 | $\textcolor{#2db49d}{\textsf{Легкая}}$  |       -        |
