@@ -225,11 +225,11 @@ public class Main {
         }
         reader.close();
 
-        String res = solve(array, arrayCorrect, k, m);
+        String res = solvePallets(array, arrayCorrect, k, m);
         System.out.println(res);
     }
 
-    private static String solve(List<Point> array, List<Point> arrayCorrect, int k, int m) {
+    private static String solvePallets(List<Point> array, List<Point> arrayCorrect, int k, int m) {
         Collections.sort(arrayCorrect, Collections.reverseOrder());
         StringBuilder result = new StringBuilder(k);
         if (m == 0) {
