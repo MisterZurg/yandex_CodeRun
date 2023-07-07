@@ -31,6 +31,7 @@
 | 336 |                      Иван и opensource                       | $\textcolor{#ff9d42}{\textsf{Средняя}}$  |    Strings     |
 | 341 |                            Палеты                            | $\textcolor{#ff9d42}{\textsf{Средняя}}$  |    Strings     |
 | 344 |                            Шашки                             | $\textcolor{#2db49d}{\textsf{Легкая}}$  |      Math      |
+| 347 |                      Музыкальные жанры                       | $\textcolor{#ff9d42}{\textsf{Средняя}}$  |      SQL       |
 | 349 |            Опять JSON’ы перекладывать (разминка)             | $\textcolor{#2db49d}{\textsf{Легкая}}$  |       -        |
 | 352 |                 Камни и украшения (разминка)                 | $\textcolor{#2db49d}{\textsf{Легкая}}$  |       -        |
 | 353 | Сортировка положительных чисел в обратном порядке (разминка) | $\textcolor{#2db49d}{\textsf{Легкая}}$  |       -        |
