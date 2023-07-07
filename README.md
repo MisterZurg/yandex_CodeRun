@@ -3,7 +3,7 @@
     <img align="center"  src="res/CodeRunBeta.png" />
 </p> 
 
-![img_1.png](res/img_1.png)
+![img_1.png](./res/img_1.png)
 ### Задачи
 | # |      Название       | Уровень| Паттерн |
 |:-:|:-------------------:|:---:|:-------:|
