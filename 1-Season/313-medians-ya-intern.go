@@ -1,73 +1,127 @@
-//package main
+// // https://www.cyberforum.ru/cpp-beginners/thread1701784.html
 //
-//import (
-//	"fmt"
-//)
-//
-////https://www.cyberforum.ru/cpp-beginners/thread1701784.html
-//
-//func main() {
-//	var n int
-//	fmt.Scan(&n)
-//
-//	L := make([]int, n+1)
-//	for i := 1; i < len(L); i++ {
-//		fmt.Scan(&L[i])
-//	}
-//
-//	result := 0
-//	// result += L[0]
-//
-//	for i := 2; i < len(L); i++ {
-//		var median int
-//		sub_slice := L[:i]
-//		// sort.Sort(sort.Reverse(sort.IntSlice(sub_slice)))
-//		if i%2 == 0 {
-//			median = sub_slice[i/2]
-//		} else {
-//			median = sub_slice[(i+1)/2]
-//		}
-//		fmt.Println(sub_slice, median)
-//		result += median
-//	}
-//	fmt.Println(result)
-//}
 package main
 
 import (
+	"bufio"
+	"container/heap"
 	"fmt"
-	"sort"
+	"os"
+	"strconv"
+	"strings"
 )
 
-func median(sequence []int) float64 {
-	n := len(sequence)
-	sort.Ints(sequence)
-	if n%2 == 0 {
-		return float64(sequence[n/2-1]+sequence[n/2]) / 2.0
-	} else {
-		return float64(sequence[n/2])
+type DoubleHeap []float64
+
+// Functions required for heap interface
+// Len returns the length of the heap
+func (h DoubleHeap) Len() int {
+	return len(h)
+}
+
+// Less reports whether the element with index i should sort before the element with index j
+func (h DoubleHeap) Less(i, j int) bool {
+	return h[i] < h[j]
+}
+
+// Swap swaps the elements with indexes i and j
+func (h DoubleHeap) Swap(i, j int) {
+	h[i], h[j] = h[j], h[i]
+}
+
+// Push adds an element to the heap
+func (h *DoubleHeap) Push(x interface{}) {
+	*h = append(*h, x.(float64))
+}
+
+// Pop removes and returns the smallest element from the heap
+func (h *DoubleHeap) Pop() interface{} {
+	old := *h
+	n := len(old)
+	x := old[n-1]
+	*h = old[:n-1]
+	return x
+}
+
+func solveHeap(arr []int, n int) int64 {
+	g := make(DoubleHeap, 0)
+	s := make(DoubleHeap, 0)
+
+	heap.Init(&g)
+	heap.Init(&s)
+
+	var result int64
+
+	for i := 0; i < n; i++ {
+		heap.Push(&s, -1.0*float64(arr[i]))
+		heap.Push(&g, -1.0*s[0])
+		heap.Pop(&s)
+
+		if g.Len() > s.Len() {
+			heap.Push(&s, -1.0*g[0])
+			heap.Push(&g, -1.0*g[0])
+			heap.Pop(&g)
+		}
+
+		result += int64(-1.0 * s[0])
 	}
+
+	return result
 }
 
 func main() {
-	var n int
-	fmt.Print("Введите количество элементов в последовательности: ")
-	fmt.Scanln(&n)
+	reader := bufio.NewReader(os.Stdin)
 
-	sequence := make([]int, n)
-	for i := 0; i < n; i++ {
-		fmt.Printf("Введите элемент #%d: ", i+1)
-		fmt.Scanln(&sequence[i])
+	nStr, _ := reader.ReadString('\n')
+	n, _ := strconv.Atoi(strings.TrimSpace(nStr))
 
-		// Находим медиану для первых i элементов
-		medianValue := median(sequence[:i+1])
-		fmt.Printf("Медиана для первых %d элементов: %.2f\n", i+1, medianValue)
+	partsStr, _ := reader.ReadString('\n')
+	parts := strings.Fields(partsStr)
+	arr := make([]int, n)
+	for i, part := range parts {
+		arr[i], _ = strconv.Atoi(part)
 	}
 
-	// Вычисляем сумму найденных значений
-	sum := 0.0
-	for i := 0; i < n; i++ {
-		sum += median(sequence[:i+1])
-	}
-	fmt.Printf("Сумма найденных медиан: %.2f\n", sum)
+	result := solveHeap(arr, n)
+	fmt.Println(result)
 }
+
+/*
+import java.io.*;
+import java.time.Duration;
+import java.time.LocalDateTime;
+import java.util.*;
+
+import java.io.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        int n = Integer.parseInt(reader.readLine());
+        String[] parts = reader.readLine().split(" ");
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = Integer.parseInt(parts[i]);
+        }
+        long result = solveHeap(arr, n);
+        System.out.println(result);
+    }
+
+    public static long solveHeap(int arr[], int n) {
+        PriorityQueue<Double> g = new PriorityQueue<>();
+        PriorityQueue<Double> s = new PriorityQueue<>();
+        long result = 0;
+        for (int i = 0; i < n; i++) {
+            s.add(-1.0 * arr[i]);
+            g.add(-1.0 * s.poll());
+            if (g.size() > s.size()) {
+                s.add(-1.0 * g.poll());
+            }
+            result += (-1.0 * s.peek());
+        }
+        return result;
+    }
+}
+*/

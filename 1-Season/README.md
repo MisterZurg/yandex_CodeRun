@@ -24,6 +24,8 @@ TODO
 | 167 |                         Произведение                         | $\textcolor{#e08585}{\textsf{Сложная}}$ |       -        |
 | 182 |                        Закрытый ключ                         | $\textcolor{#2db49d}{\textsf{Легкая}}$  |      Math      |
 | 187 |                     Программист на пляже                     | $\textcolor{#2db49d}{\textsf{Легкая}}$  |      Math      |
+| 189 |                      Перемещение чанков                      | $\textcolor{#e08585}{\textsf{Сложная}}$  |     Yandex     |
+| 198 |                            Поиск                             | $\textcolor{#e08585}{\textsf{Сложная}}$  |     Yandex     |
 | 204 |                            Ошибка                            | $\textcolor{#2db49d}{\textsf{Легкая}}$  |      Math      |
 | 211 |                           Встречи                            | $\textcolor{#ff9d42}{\textsf{Средняя}}$ |                |
 | 251 |                        Набор символов                        | $\textcolor{#2db49d}{\textsf{Легкая}}$  | Sliding Window |
@@ -31,10 +33,12 @@ TODO
 | 260 |                      Телефонные номера                       | $\textcolor{#ff9d42}{\textsf{Средняя}}$|    Strings     |
 | 286 |                    Расшифровка сообщения                     | $\textcolor{#ff9d42}{\textsf{Средняя}}$|    Strings     |
 | 306 |                         День недели                          | $\textcolor{#ff9d42}{\textsf{Средняя}}$|     stdlib     |
+| 313 |                         Сумма медиан                         | $\textcolor{#ff9d42}{\textsf{Средняя}}$|      Куча      |
 | 324 |                        Много стульев                         | $\textcolor{#2db49d}{\textsf{Легкая}}$  |      Math      |
 | 325 |                      Коля и датацентры                       | $\textcolor{#ff9d42}{\textsf{Средняя}}$  |      Math      |
 | 331 |                   Средняя сетевая задержка                   | $\textcolor{#ff9d42}{\textsf{Средняя}}$  |      Math      |
-| 336 |                   Иван и opensource                   | $\textcolor{#ff9d42}{\textsf{Средняя}}$  |    Strings     |
+| 336 |                      Иван и opensource                       | $\textcolor{#ff9d42}{\textsf{Средняя}}$  |    Strings     |
+| 341 |                            Палеты                            | $\textcolor{#ff9d42}{\textsf{Средняя}}$  |    Strings     |
 | 344 |                            Шашки                             | $\textcolor{#2db49d}{\textsf{Легкая}}$  |      Math      |
 | 349 |            Опять JSON’ы перекладывать (разминка)             | $\textcolor{#2db49d}{\textsf{Легкая}}$  |       -        |
 | 352 |                 Камни и украшения (разминка)                 | $\textcolor{#2db49d}{\textsf{Легкая}}$  |       -        |
