@@ -1,17 +1,6 @@
 ## Первый сезон
 > 7 апреля ⸺ 7 июля 2023
 
-TODO
-> Med 211, 222, 227
-> Hard 213
-> https://github.com/bazarinm/Yandex-Internship-Contest-2018/tree/master
-
-> Med 234, 291
-> https://github.com/tehnick/tehnick-yac/tree/8a6093fbc412beb4b401a60e84af47b21dcdec20/Backend-2021
-
-> Med 257
-> https://github.com/naemnamenmea/competitive-programming/tree/2665c6535bba047a88b6658db3b79d2a58e187f5/yandex-contest/yandex-contest%202019%20internship/code
-
 > Easy 377
 > Med 211, 222, 227, 234, 257, 286, 309, 336
 > Hard 167
@@ -31,9 +20,11 @@ TODO
 | 251 |                        Набор символов                        | $\textcolor{#2db49d}{\textsf{Легкая}}$  | Sliding Window |
 | 257 |                          RLE-сжатие                          | $\textcolor{#ff9d42}{\textsf{Средняя}}$|    Strings     |
 | 260 |                      Телефонные номера                       | $\textcolor{#ff9d42}{\textsf{Средняя}}$|    Strings     |
+| 280 |                      Поддоны на складе                       | $\textcolor{#ff9d42}{\textsf{Средняя}}$|       -        |
 | 286 |                    Расшифровка сообщения                     | $\textcolor{#ff9d42}{\textsf{Средняя}}$|    Strings     |
 | 306 |                         День недели                          | $\textcolor{#ff9d42}{\textsf{Средняя}}$|     stdlib     |
 | 313 |                         Сумма медиан                         | $\textcolor{#ff9d42}{\textsf{Средняя}}$|      Куча      |
+| 313 |                            Карты                             | $\textcolor{#ff9d42}{\textsf{Средняя}}$|      Куча      |
 | 324 |                        Много стульев                         | $\textcolor{#2db49d}{\textsf{Легкая}}$  |      Math      |
 | 325 |                      Коля и датацентры                       | $\textcolor{#ff9d42}{\textsf{Средняя}}$  |      Math      |
 | 331 |                   Средняя сетевая задержка                   | $\textcolor{#ff9d42}{\textsf{Средняя}}$  |      Math      |
@@ -47,7 +38,7 @@ TODO
 | 360 |                       Частный элемент                        | $\textcolor{#2db49d}{\textsf{Легкая}}$  |       -        |
 | 361 |                       Средний элемент                        | $\textcolor{#2db49d}{\textsf{Легкая}}$  |       -        |
 | 377 |                     Оценка разнообразия                      | $\textcolor{#2db49d}{\textsf{Легкая}}$  |       -        |
-| 380 |                            Посадка в самолет                            | $\textcolor{#ff9d42}{\textsf{Средняя}}$  |       -        |
+| 380 |                      Посадка в самолет                       | $\textcolor{#ff9d42}{\textsf{Средняя}}$  |       -        |
 | 381 |                   Форматирование календаря                   | $\textcolor{#2db49d}{\textsf{Легкая}}$  |      Math      |
 
 
