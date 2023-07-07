@@ -9,40 +9,40 @@
 > 7 апреля ⸺ 7 июля 2023
 
 
-|  #  |                           Название                           |                 Уровень                 |                             Паттерн                             |
-|:---:|:------------------------------------------------------------:|:---------------------------------------:|:---------------------------------------------------------------:|
-| 155 |                     Уникальные элементы                      | $\textcolor{#2db49d}{\textsf{Легкая}}$  |                                -                                |
-| 167 |                         Произведение                         | $\textcolor{#e08585}{\textsf{Сложная}}$ |                                -                                |
-| 182 |                        Закрытый ключ                         | $\textcolor{#2db49d}{\textsf{Легкая}}$  |                              Math                               |
-| 187 |                     Программист на пляже                     | $\textcolor{#2db49d}{\textsf{Легкая}}$  | <img src="..%2Fres%2FYDX-token.png" width=18px vspace="6"> Math |
-| 189 |                      Перемещение чанков                      | $\textcolor{#e08585}{\textsf{Сложная}}$  |                             Yandex                              |
-| 198 |                            Поиск                             | $\textcolor{#e08585}{\textsf{Сложная}}$  |                             Yandex                              |
-| 204 |                            Ошибка                            | $\textcolor{#2db49d}{\textsf{Легкая}}$  |                              Math                               |
-| 211 |                           Встречи                            | $\textcolor{#ff9d42}{\textsf{Средняя}}$ |                                                                 |
-| 251 |                        Набор символов                        | $\textcolor{#2db49d}{\textsf{Легкая}}$  |                         Sliding Window                          |
-| 257 |                          RLE-сжатие                          | $\textcolor{#ff9d42}{\textsf{Средняя}}$|                             Strings                             |
-| 260 |                      Телефонные номера                       | $\textcolor{#ff9d42}{\textsf{Средняя}}$|                             Strings                             |
-| 280 |                      Поддоны на складе                       | $\textcolor{#ff9d42}{\textsf{Средняя}}$|                                -                                |
-| 286 |                    Расшифровка сообщения                     | $\textcolor{#ff9d42}{\textsf{Средняя}}$|                             Strings                             |
-| 306 |                         День недели                          | $\textcolor{#ff9d42}{\textsf{Средняя}}$|                             stdlib                              |
-| 313 |                         Сумма медиан                         | $\textcolor{#ff9d42}{\textsf{Средняя}}$|                              Куча                               |
-| 313 |                            Карты                             | $\textcolor{#ff9d42}{\textsf{Средняя}}$|                              Куча                               |
-| 324 |                        Много стульев                         | $\textcolor{#2db49d}{\textsf{Легкая}}$  |                              Math                               |
-| 325 |                      Коля и датацентры                       | $\textcolor{#ff9d42}{\textsf{Средняя}}$  |                              Math                               |
-| 331 |                   Средняя сетевая задержка                   | $\textcolor{#ff9d42}{\textsf{Средняя}}$  |                              Math                               |
-| 336 |                      Иван и opensource                       | $\textcolor{#ff9d42}{\textsf{Средняя}}$  |                             Strings                             |
-| 341 |                            Палеты                            | $\textcolor{#ff9d42}{\textsf{Средняя}}$  |                             Strings                             |
-| 344 |                            Шашки                             | $\textcolor{#2db49d}{\textsf{Легкая}}$  |                              Math                               |
-| 347 |                      Музыкальные жанры                       | $\textcolor{#ff9d42}{\textsf{Средняя}}$  |                               SQL                               |
-| 349 |            Опять JSON’ы перекладывать (разминка)             | $\textcolor{#2db49d}{\textsf{Легкая}}$  |                                -                                |
-| 352 |                 Камни и украшения (разминка)                 | $\textcolor{#2db49d}{\textsf{Легкая}}$  |                                -                                |
-| 353 | Сортировка положительных чисел в обратном порядке (разминка) | $\textcolor{#2db49d}{\textsf{Легкая}}$  |                                -                                |
-| 357 |                        Граф подстрок                         | $\textcolor{#2db49d}{\textsf{Легкая}}$  |                                -                                |
-| 360 |                       Частный элемент                        | $\textcolor{#2db49d}{\textsf{Легкая}}$  |                                -                                |
-| 361 |                       Средний элемент                        | $\textcolor{#2db49d}{\textsf{Легкая}}$  |                                -                                |
-| 377 |                     Оценка разнообразия                      | $\textcolor{#2db49d}{\textsf{Легкая}}$  |                                -                                |
-| 380 |                      Посадка в самолет                       | $\textcolor{#ff9d42}{\textsf{Средняя}}$  |                                -                                |
-| 381 |                   Форматирование календаря                   | $\textcolor{#2db49d}{\textsf{Легкая}}$  |                              Math                               |
+|  #  |                           Название                           |                 Уровень                 |                             Паттерн                              |
+|:---:|:------------------------------------------------------------:|:---------------------------------------:|:----------------------------------------------------------------:|
+| 155 |                     Уникальные элементы                      | $\textcolor{#2db49d}{\textsf{Легкая}}$  |                                -                                 |
+| 167 |                         Произведение                         | $\textcolor{#e08585}{\textsf{Сложная}}$ |                                -                                 |
+| 182 |                        Закрытый ключ                         | $\textcolor{#2db49d}{\textsf{Легкая}}$  | <img src="..%2Fres%2FYDX-token.png" width=18px vspace="6"> Math  |
+| 187 |                     Программист на пляже                     | $\textcolor{#2db49d}{\textsf{Легкая}}$  | <img src="..%2Fres%2FYDX-token.png" width=18px vspace="6"> Math  |
+| 189 |                      Перемещение чанков                      | $\textcolor{#e08585}{\textsf{Сложная}}$ | <img src="..%2Fres%2FYDX-token.png" width=18px vspace="6">Yandex |
+| 198 |                            Поиск                             | $\textcolor{#e08585}{\textsf{Сложная}}$ | <img src="..%2Fres%2FYDX-token.png" width=18px vspace="6">Yandex |
+| 204 |                            Ошибка                            | $\textcolor{#2db49d}{\textsf{Легкая}}$  |                               Math                               |
+| 211 |                           Встречи                            | $\textcolor{#ff9d42}{\textsf{Средняя}}$ |                                                                  |
+| 251 |                        Набор символов                        | $\textcolor{#2db49d}{\textsf{Легкая}}$  |                          Sliding Window                          |
+| 257 |                          RLE-сжатие                          | $\textcolor{#ff9d42}{\textsf{Средняя}}$ |                             Strings                              |
+| 260 |                      Телефонные номера                       | $\textcolor{#ff9d42}{\textsf{Средняя}}$ |                             Strings                              |
+| 280 |                      Поддоны на складе                       | $\textcolor{#ff9d42}{\textsf{Средняя}}$ |                                -                                 |
+| 286 |                    Расшифровка сообщения                     | $\textcolor{#ff9d42}{\textsf{Средняя}}$ |                             Strings                              |
+| 306 |                         День недели                          | $\textcolor{#ff9d42}{\textsf{Средняя}}$ |                              stdlib                              |
+| 313 |                         Сумма медиан                         | $\textcolor{#ff9d42}{\textsf{Средняя}}$ |                               Куча                               |
+| 313 |                            Карты                             | $\textcolor{#ff9d42}{\textsf{Средняя}}$ |                               Куча                               |
+| 324 |                        Много стульев                         | $\textcolor{#2db49d}{\textsf{Легкая}}$  |                               Math                               |
+| 325 |                      Коля и датацентры                       | $\textcolor{#ff9d42}{\textsf{Средняя}}$ |                               Math                               |
+| 331 |                   Средняя сетевая задержка                   | $\textcolor{#ff9d42}{\textsf{Средняя}}$ |                               Math                               |
+| 336 |                      Иван и opensource                       | $\textcolor{#ff9d42}{\textsf{Средняя}}$ |                             Strings                              |
+| 341 |                            Палеты                            | $\textcolor{#ff9d42}{\textsf{Средняя}}$ |                             Strings                              |
+| 344 |                            Шашки                             | $\textcolor{#2db49d}{\textsf{Легкая}}$  |                               Math                               |
+| 347 |                      Музыкальные жанры                       | $\textcolor{#ff9d42}{\textsf{Средняя}}$ |                               SQL                                |
+| 349 |            Опять JSON’ы перекладывать (разминка)             | $\textcolor{#2db49d}{\textsf{Легкая}}$  |                                -                                 |
+| 352 |                 Камни и украшения (разминка)                 | $\textcolor{#2db49d}{\textsf{Легкая}}$  |                                -                                 |
+| 353 | Сортировка положительных чисел в обратном порядке (разминка) | $\textcolor{#2db49d}{\textsf{Легкая}}$  |                                -                                 |
+| 357 |                        Граф подстрок                         | $\textcolor{#2db49d}{\textsf{Легкая}}$  |                                -                                 |
+| 360 |                       Частный элемент                        | $\textcolor{#2db49d}{\textsf{Легкая}}$  |                                -                                 |
+| 361 |                       Средний элемент                        | $\textcolor{#2db49d}{\textsf{Легкая}}$  |                                -                                 |
+| 377 |                     Оценка разнообразия                      | $\textcolor{#2db49d}{\textsf{Легкая}}$  |                                -                                 |
+| 380 |                      Посадка в самолет                       | $\textcolor{#ff9d42}{\textsf{Средняя}}$ |                                -                                 |
+| 381 |                   Форматирование календаря                   | $\textcolor{#2db49d}{\textsf{Легкая}}$  |                               Math                               |
 
 
 ### Разбор
