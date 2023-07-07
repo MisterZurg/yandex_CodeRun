@@ -14,7 +14,7 @@
 | 155 |                     Уникальные элементы                      | $\textcolor{#2db49d}{\textsf{Легкая}}$  |                                -                                 |
 | 167 |                         Произведение                         | $\textcolor{#e08585}{\textsf{Сложная}}$ |                                -                                 |
 | 182 |                        Закрытый ключ                         | $\textcolor{#2db49d}{\textsf{Легкая}}$  |                               Math                               |
-| 187 |                     Программист на пляже                     | $\textcolor{#2db49d}{\textsf{Легкая}}$  | <img src="..%2Fres%2FYDX-token.png" width=15px vspace=20px> Math |
+| 187 |                     Программист на пляже                     | $\textcolor{#2db49d}{\textsf{Легкая}}$  | <img src="..%2Fres%2FYDX-token.png" width=18px> Math |
 | 189 |                      Перемещение чанков                      | $\textcolor{#e08585}{\textsf{Сложная}}$  |                              Yandex                              |
 | 198 |                            Поиск                             | $\textcolor{#e08585}{\textsf{Сложная}}$  |                              Yandex                              |
 | 204 |                            Ошибка                            | $\textcolor{#2db49d}{\textsf{Легкая}}$  |                               Math                               |
