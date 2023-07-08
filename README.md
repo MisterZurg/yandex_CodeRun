@@ -16,10 +16,10 @@
 
 
 ### Сезоны
-<p align="center"> 
-<img align="center"  src="res/img_2.png">
-<p align="center"> 
-
 | # |      Название       | Период | Место |
 |:-:|:-------------------:|:-------:|:-----:|
 | 1 | Первый сезон | 7 апреля ⸺ 7 июля 2023 |  TBA  |
+
+<p align="center"> 
+<img align="center"  src="res/img_2.png">
+<p align="center">
